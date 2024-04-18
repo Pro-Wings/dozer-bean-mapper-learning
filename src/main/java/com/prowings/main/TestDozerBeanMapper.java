@@ -1,6 +1,8 @@
 package com.prowings.main;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.dozer.DozerBeanMapper;
 
@@ -26,8 +28,15 @@ public class TestDozerBeanMapper {
 
 		System.out.println(employee);
 		
-		Address address = new Address(123, "Pune", "India");
-		Student student = new Student(10, "Ram", Arrays.asList(address));
+		Address address1 = new Address(123, "Pune", "India");
+		Address address2 = new Address(124, "Mumbai", "India");
+		Address address3 = new Address(123, "Pune", "India");
+		List<Address> addrList = new ArrayList<Address>();
+		addrList.add(address1);
+		addrList.add(address2);
+		addrList.add(address3);
+		
+		Student student = new Student(10, "Ram", addrList) ;
 		
 		Candidate candidate = mapper.map(student, Candidate.class);
 		

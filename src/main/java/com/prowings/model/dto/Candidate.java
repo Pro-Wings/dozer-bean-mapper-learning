@@ -1,6 +1,7 @@
 package com.prowings.model.dto;
 
 import java.util.List;
+import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,6 +18,6 @@ public class Candidate {
 	
 	private int id;
 	private String completeName;
-	private List<AddressDTO> corruspondance;
+	private AddressDTO[] corruspondance;
 
 }
