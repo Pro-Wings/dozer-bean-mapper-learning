@@ -8,17 +8,13 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class Employee {
+public class AddressDTO {
 	
-	private String firstName;
-	private int age;
-	private String address;
-	private double height;
-	private String mode;
-	private String birthDate;
-
-
+	private int pincode;
+	private String cityName;
+	private String country;
+	
 }

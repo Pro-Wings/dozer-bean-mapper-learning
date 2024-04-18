@@ -8,16 +8,13 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class Person {
+public class Address {
 	
-	private String name;
-	private int age;
-	private String address;
-	private String height;
-	private int mode;
-	private long birthDate;
-
+	private int pin;
+	private String city;
+	private String country;
+	
 }
